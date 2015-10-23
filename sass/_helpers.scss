@@ -2,6 +2,18 @@
 HELPERS
 ***********************/
 
+// Message at the top of the page for IE versions less than IE9
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #e74c3c;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    a {
+        color: white;
+    }
+}
+
 // To center the sections
 .container {
     width: 90%;
@@ -26,4 +38,41 @@ HELPERS
 
 .clearfix {
     *zoom: 1;
+}
+
+// Button that appears at the bottom of the page when you scroll down. 
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    z-index: 99999999;
+    background-color: #777;
+    color: #eee;
+    width: 50px;
+    height: 48px;
+    line-height: 48px;
+    right: 30px;
+    bottom: 30px;
+    padding-top: 2px;
+    border-radius: 3px;
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in-out);
+    &:hover {
+        background-color: #888;
+    }
+    &.show {
+        visibility:visible;
+        cursor:pointer;
+        opacity: 1.0;
+    }
+    i.fa {
+        line-height: inherit;
+    }
+    .scroll-top-inner {
+        text-decoration: none !important;
+        font-weight: bold;
+    }
 }

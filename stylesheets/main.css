@@ -36,23 +36,23 @@ a.navbar-toggle {
   text-transform: uppercase;
 }
 
-/* line 39, ../sass/_header.scss */
+/* line 34, ../sass/_header.scss */
 nav {
   display: none;
   float: right;
   width: 100%;
 }
-/* line 43, ../sass/_header.scss */
+/* line 38, ../sass/_header.scss */
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 47, ../sass/_header.scss */
+/* line 42, ../sass/_header.scss */
 nav ul li {
   border-bottom: solid 1px #eee;
 }
-/* line 51, ../sass/_header.scss */
+/* line 46, ../sass/_header.scss */
 nav a {
   display: block;
   padding: 25px 0;
@@ -69,17 +69,17 @@ HEADER
 min-width: 1024px
 ***********************/
 @media only screen and (min-width: 1024px) {
-  /* line 70, ../sass/_header.scss */
+  /* line 65, ../sass/_header.scss */
   a.navbar-toggle {
     display: none;
   }
 
-  /* line 73, ../sass/_header.scss */
+  /* line 68, ../sass/_header.scss */
   nav {
     display: block !important;
     width: 88%;
   }
-  /* line 76, ../sass/_header.scss */
+  /* line 71, ../sass/_header.scss */
   nav a {
     float: left;
     width: 10%;
@@ -88,30 +88,30 @@ min-width: 1024px
     font-size: 0.8em;
     font-weight: 400;
   }
-  /* line 84, ../sass/_header.scss */
+  /* line 79, ../sass/_header.scss */
   nav:hover {
     color: #929497;
     text-decoration: none;
   }
-  /* line 88, ../sass/_header.scss */
+  /* line 83, ../sass/_header.scss */
   nav:visited {
     color: #929497;
   }
-  /* line 91, ../sass/_header.scss */
+  /* line 86, ../sass/_header.scss */
   nav li:first-child a {
     margin-left: 0;
   }
-  /* line 94, ../sass/_header.scss */
+  /* line 89, ../sass/_header.scss */
   nav li:last-child a {
     margin-right: 0;
   }
 
-  /* line 100, ../sass/_header.scss */
+  /* line 95, ../sass/_header.scss */
   nav ul li {
     display: inline;
   }
 
-  /* line 103, ../sass/_header.scss */
+  /* line 98, ../sass/_header.scss */
   .oldie nav a {
     margin: 0 0.7%;
   }
@@ -144,7 +144,7 @@ hr {
 
 /* line 25, ../sass/_sections.scss */
 #event {
-  background: url("../images/bg-lego.jpg") left top no-repeat fixed;
+  background: url("../images/bg-lego.jpg") left top no-repeat;
   background-size: cover;
   height: 400px;
   color: white;
@@ -173,29 +173,28 @@ hr {
 }
 /* line 48, ../sass/_sections.scss */
 #event a.arrow {
-  margin-top: 30px;
-  display: block;
+  display: none;
 }
-/* line 52, ../sass/_sections.scss */
+/* line 51, ../sass/_sections.scss */
 #event .fa-angle-double-down {
   color: white;
   font-size: 3.5em;
 }
-/* line 56, ../sass/_sections.scss */
+/* line 55, ../sass/_sections.scss */
 #event #video-filter, #event #video-container {
   display: none;
 }
 
-/* line 61, ../sass/_sections.scss */
+/* line 60, ../sass/_sections.scss */
 #quotes {
   background-color: #ddd;
 }
-/* line 63, ../sass/_sections.scss */
+/* line 62, ../sass/_sections.scss */
 #quotes .quote-block {
   vertical-align: top;
   display: inline-block;
 }
-/* line 66, ../sass/_sections.scss */
+/* line 65, ../sass/_sections.scss */
 #quotes .quote-block blockquote {
   position: relative;
   background-color: white;
@@ -203,24 +202,24 @@ hr {
   padding: 10px;
   margin: 0;
 }
-/* line 72, ../sass/_sections.scss */
+/* line 71, ../sass/_sections.scss */
 #quotes .quote-block blockquote:after {
   content: "";
   position: absolute;
   top: 100%;
   left: 20px;
-  border-top: 20px solid blue;
+  border-top: 20px solid white;
   border-top-color: inherit;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   color: white;
 }
 
-/* line 88, ../sass/_sections.scss */
+/* line 87, ../sass/_sections.scss */
 #intro {
   background-color: white;
 }
-/* line 90, ../sass/_sections.scss */
+/* line 89, ../sass/_sections.scss */
 #intro img {
   width: 18%;
   padding: 5px;
@@ -228,57 +227,60 @@ hr {
   margin-bottom: 5px;
   border: solid 1px #efefef;
 }
-/* line 97, ../sass/_sections.scss */
+/* line 96, ../sass/_sections.scss */
 #intro p {
   text-align: justify;
 }
 
-/* line 102, ../sass/_sections.scss */
+/* line 101, ../sass/_sections.scss */
 #companies {
   background-color: white;
 }
-/* line 104, ../sass/_sections.scss */
+/* line 103, ../sass/_sections.scss */
 #companies .portrait {
   display: inline-block;
   margin-bottom: 30px;
 }
 
-/* line 110, ../sass/_sections.scss */
+/* line 109, ../sass/_sections.scss */
 #attendees {
-  height: 400px;
-  padding-top: 100px;
   background: url("../images/bg-lego.jpg") left top no-repeat;
   background-size: cover;
   color: white;
 }
+/* line 113, ../sass/_sections.scss */
+#attendees h2 {
+  font-weight: 900;
+}
 /* line 116, ../sass/_sections.scss */
 #attendees p {
   text-align: justify;
+  margin-bottom: 30px;
 }
 
-/* line 121, ../sass/_sections.scss */
+/* line 122, ../sass/_sections.scss */
 #movie {
   background-color: white;
 }
-/* line 123, ../sass/_sections.scss */
+/* line 124, ../sass/_sections.scss */
 #movie iframe {
   height: 160px;
   width: 100%;
   border: none;
 }
 
-/* line 132, ../sass/_sections.scss */
+/* line 131, ../sass/_sections.scss */
 #mailing {
   background-color: white;
 }
-/* line 134, ../sass/_sections.scss */
+/* line 133, ../sass/_sections.scss */
 #mailing input {
   display: block;
   width: 100%;
   margin: 0 auto 10px;
   border: none;
 }
-/* line 140, ../sass/_sections.scss */
+/* line 139, ../sass/_sections.scss */
 #mailing input[type="text"] {
   border: solid 1px #ddd;
   border-radius: 3px;
@@ -287,13 +289,13 @@ hr {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 146, ../sass/_sections.scss */
+/* line 145, ../sass/_sections.scss */
 #mailing p.terms {
   font-size: 0.8em;
   line-height: 1.5;
   color: #666;
 }
-/* line 150, ../sass/_sections.scss */
+/* line 149, ../sass/_sections.scss */
 #mailing p.terms a {
   text-decoration: none;
   color: blue;
@@ -305,37 +307,56 @@ min-width: 768px
 ***********************/
 @media only screen and (min-width: 768px) {
   /* line 162, ../sass/_sections.scss */
-  #event {
-    height: 350px;
-  }
-  /* line 164, ../sass/_sections.scss */
-  #event p.lead {
-    font-size: 1.1em;
+  section h2 {
+    font-size: 1.9em;
+    margin-bottom: 50px;
   }
 
-  /* line 170, ../sass/_sections.scss */
+  /* line 168, ../sass/_sections.scss */
+  #event p.lead {
+    font-size: 1.1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%;
+  }
+  /* line 175, ../sass/_sections.scss */
+  #event a.arrow {
+    margin-top: 20px;
+    display: block;
+    position: relative;
+  }
+  /* line 179, ../sass/_sections.scss */
+  #event a.arrow:focus {
+    top: 5px;
+  }
+
+  /* line 186, ../sass/_sections.scss */
   #quotes .quote-block {
     width: 32%;
     margin-right: 5px;
   }
 
-  /* line 177, ../sass/_sections.scss */
-  #intro img {
-    width: 22%;
-  }
-
-  /* line 183, ../sass/_sections.scss */
+  /* line 193, ../sass/_sections.scss */
   #companies .portrait {
     width: 32%;
   }
 
-  /* line 189, ../sass/_sections.scss */
+  /* line 198, ../sass/_sections.scss */
+  #attendees p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%;
+  }
+
+  /* line 206, ../sass/_sections.scss */
   #movie iframe {
     height: 300px;
     width: 77%;
   }
 
-  /* line 196, ../sass/_sections.scss */
+  /* line 213, ../sass/_sections.scss */
   #mailing input {
     width: 77%;
   }
@@ -345,27 +366,27 @@ SECTIONS
 min-width: 1024px
 ***********************/
 @media only screen and (min-width: 1024px) {
-  /* line 207, ../sass/_sections.scss */
+  /* line 224, ../sass/_sections.scss */
   #event {
     height: 520px;
     position: relative;
     z-index: 1;
   }
-  /* line 211, ../sass/_sections.scss */
+  /* line 228, ../sass/_sections.scss */
   #event h1 {
     font-size: 3.5em;
   }
-  /* line 214, ../sass/_sections.scss */
+  /* line 231, ../sass/_sections.scss */
   #event p.lead {
     font-size: 1.5em;
     text-align: center;
   }
-  /* line 218, ../sass/_sections.scss */
+  /* line 235, ../sass/_sections.scss */
   #event #event-container {
     position: relative;
     z-index: 150;
   }
-  /* line 222, ../sass/_sections.scss */
+  /* line 239, ../sass/_sections.scss */
   #event #video-filter {
     display: block;
     position: absolute;
@@ -377,7 +398,7 @@ min-width: 1024px
     opacity: 0.6;
     z-index: 100;
   }
-  /* line 233, ../sass/_sections.scss */
+  /* line 250, ../sass/_sections.scss */
   #event #video-container {
     display: block;
     position: absolute;
@@ -389,68 +410,133 @@ min-width: 1024px
     z-index: 50;
   }
 
-  /* line 246, ../sass/_sections.scss */
+  /* line 263, ../sass/_sections.scss */
   #intro img {
     width: 10%;
   }
 
-  /* line 252, ../sass/_sections.scss */
+  /* line 269, ../sass/_sections.scss */
   #movie iframe {
     height: 300px;
     width: 47%;
   }
 
-  /* line 259, ../sass/_sections.scss */
+  /* line 276, ../sass/_sections.scss */
   #mailing input {
     width: 47%;
   }
 }
 /***********************
-FOOTER
-***********************/
-/* line 5, ../sass/_footer.scss */
-footer {
-  background: #222;
-  padding: 5px;
-  color: white;
-}
-
-/***********************
 HELPERS
 ***********************/
 /* line 6, ../sass/_helpers.scss */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #e74c3c;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+}
+/* line 12, ../sass/_helpers.scss */
+.browserupgrade a {
+  color: white;
+}
+
+/* line 18, ../sass/_helpers.scss */
 .container {
   width: 90%;
   margin: 0 auto;
 }
 
-/* line 12, ../sass/_helpers.scss */
+/* line 24, ../sass/_helpers.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 17, ../sass/_helpers.scss */
+/* line 29, ../sass/_helpers.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 23, ../sass/_helpers.scss */
+/* line 35, ../sass/_helpers.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 27, ../sass/_helpers.scss */
+/* line 39, ../sass/_helpers.scss */
 .clearfix {
   *zoom: 1;
+}
+
+/* line 44, ../sass/_helpers.scss */
+.scroll-top-wrapper {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  z-index: 99999999;
+  background-color: #777;
+  color: #eee;
+  width: 50px;
+  height: 48px;
+  line-height: 48px;
+  right: 30px;
+  bottom: 30px;
+  padding-top: 2px;
+  border-radius: 3px;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 63, ../sass/_helpers.scss */
+.scroll-top-wrapper:hover {
+  background-color: #888;
+}
+/* line 66, ../sass/_helpers.scss */
+.scroll-top-wrapper.show {
+  visibility: visible;
+  cursor: pointer;
+  opacity: 1.0;
+}
+/* line 71, ../sass/_helpers.scss */
+.scroll-top-wrapper i.fa {
+  line-height: inherit;
+}
+/* line 74, ../sass/_helpers.scss */
+.scroll-top-wrapper .scroll-top-inner {
+  text-decoration: none !important;
+  font-weight: bold;
+}
+
+/* line 17, ../sass/main.scss */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* line 23, ../sass/main.scss */
+body {
+  font: 16px/26px 'Open Sans', Helvetica, Helvetica Neue, Arial, sans-serif;
 }
 
 /***********************
 BUTTONS
 ***********************/
-/* line 5, ../sass/_buttons.scss */
-.button {
+/* line 32, ../sass/main.scss */
+a.button, #mailing input[type="submit"] {
   display: inline-block;
   padding: 10px 20px;
   background-color: #DD506B;
@@ -459,29 +545,30 @@ BUTTONS
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 44, ../sass/main.scss */
+a.button:hover, #mailing input[type="submit"]:hover {
+  background-color: #AF223D;
 }
 
-/* line 18, ../sass/main.scss */
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/* line 24, ../sass/main.scss */
-body {
-  font: 16px/26px 'Open Sans', Helvetica, Helvetica Neue, Arial, sans-serif;
-}
-
-/* line 28, ../sass/main.scss */
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #e74c3c;
-  text-align: center;
-  color: white;
-  padding: 10px 0;
-}
-/* line 34, ../sass/main.scss */
-.browserupgrade a {
+/***********************
+FOOTER
+***********************/
+/* line 58, ../sass/main.scss */
+footer {
+  background: #222;
+  padding: 5px;
   color: white;
 }

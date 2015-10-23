@@ -15,4 +15,15 @@ $(document).ready(function(){
 	        event.preventDefault();
 	    });
 	});
+
+	// Make the "Back to Top" button appear when you scroll down
+	$(function(){  
+	    $(document).on( 'scroll', function(){
+	        if ($(window).scrollTop() > 100) {
+	            $('.scroll-top-wrapper').addClass('show');
+	        } else {
+	            $('.scroll-top-wrapper').removeClass('show');
+	        }
+	    });
+	});
 });

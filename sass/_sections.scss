@@ -23,7 +23,7 @@ hr {
 }
 
 #event {
-	background: url("../images/bg-lego.jpg") left top no-repeat fixed;
+	background: url("../images/bg-lego.jpg") left top no-repeat;
     background-size: cover;
 	height: 400px;
 	color: white;
@@ -46,8 +46,7 @@ hr {
 		margin-bottom: 20px;
 	}
 	a.arrow {
-		margin-top: 30px;
-		display: block;
+		display: none;
 	}
 	.fa-angle-double-down {
   		color: white;
@@ -74,7 +73,7 @@ hr {
 			    position: absolute;
 			   	top: 100%;
 			   	left: 20px;
-			   	border-top: 20px solid blue;
+			   	border-top: 20px solid white;
 			   	border-top-color: inherit; 
 			   	border-left: 20px solid transparent;
 			   	border-right: 20px solid transparent; 
@@ -108,21 +107,21 @@ hr {
 }
 
 #attendees {
-	height: 400px;
-	padding-top: 100px;
 	background: url("../images/bg-lego.jpg") left top no-repeat;
     background-size: cover;
 	color: white;
+	h2 {
+		font-weight: 900;
+	}
 	p {
 		text-align: justify;
+		margin-bottom: 30px;
 	}
 }
 
 #movie {
 	background-color: white;
 	iframe {
-		//width: 560px;
-		//height: 315px; 
 		height: 160px;
 		width: 100%;
 		border: none;
@@ -159,10 +158,27 @@ SECTIONS
 min-width: 768px
 ***********************/
 @media only screen and (min-width: 768px) {
+	section {
+		h2 {
+			font-size: 1.9em;
+			margin-bottom: 50px;
+		}
+	}
 	#event {
-		height: 350px;
 		p.lead {
 			font-size: 1.1em;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			width: 80%;
+		}
+		a.arrow {
+			margin-top: 20px;
+			display: block;
+			position: relative;
+			&:focus {
+				top: 5px;
+			}
 		}
 	}
 	
@@ -173,16 +189,17 @@ min-width: 768px
 		}
 	}
 
-	#intro {
-		img {
-			width: 22%;
-		}
-	}
-
 	#companies {
 		.portrait {
 			width: 32%;
 		}
+	}
+
+	#attendees p {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		width: 80%;
 	}
 
 	#movie {

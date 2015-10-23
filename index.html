@@ -9,17 +9,17 @@
 		<title>Lego Summit | Where the Lego World Meets</title>
 		<meta name="description" content="We bring together Lego builders from around the globe to meet, make, and build the future of the Lego ecosystem.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2">
-        <link rel="shortcut icon" href="favicon.png?v=2">
-        <link rel="shortcut icon" href="favicon.ico?v=2">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="shortcut icon" href="favicon.ico">
 
 		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 
-        <script src="js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/modernizr.min.js"></script>
 	</head>
-	<body>
+	<body id="top">
 		<!--[if lt IE 9]>
             <p class="browserupgrade">You are using an outdated version of Internet Explorer. For a better experience, <a href="http://browsehappy.com/"><strong>upgrade your browser</strong></a> or <a href="http://browsehappy.com/"><strong>use another browser</strong></a> such as Chrome or Firefox.</p>
         <![endif]-->
@@ -28,7 +28,6 @@
             <div class="container">
                 <a href="#"><img class="title" src="images/header-logo-grey.png" alt="The Lego Summit"></a>
                 <a href="#" class="navbar-toggle">
-                    <!-- <i class="fa fa-bars"></i> -->
                     Menu
                 </a>
                 <nav>
@@ -66,7 +65,7 @@
                     <source src="videos/lego-video.mp4" type="video/mp4"/>
                     <source src="videos/lego-video.ogv" type="video/ogv"/>
                     <source src="videos/lego-video.webm" type="video/webm"/>
-                    Your browser does not support the video tag. I suggest you upgrade your browser.
+                    <p class="browserupgrade">You are using an outdated version of Internet Explorer. For a better experience, <a href="http://browsehappy.com/"><strong>upgrade your browser</strong></a> or <a href="http://browsehappy.com/"><strong>use another browser</strong></a> such as Chrome or Firefox.</p>
                 </video>
             </div>
         </section>
@@ -77,17 +76,17 @@
 
                 <div class="quote-block">
                     <blockquote>“As a startup the opportunity to exhibit your Lego to a mass market of targeted individuals at The Lego Summit is incredible."</blockquote>
-                    <p><strong>A. Legoman,<br>Founder & CTO at Lego</strong></p>
+                    <p><strong>A. Legoman</strong>,<br>Founder & CTO at Lego</p>
                 </div>
                 
                  <div class="quote-block">
                     <blockquote>“It's a tremendous validation for us. As a startup this event is really the one for us and we've put everything on the line for this.”</blockquote>
-                    <p><strong>Darth Lego,<br>Founder at starwarslego.com</strong></p>
+                    <p><strong>Darth Lego</strong>,<br>Founder at starwarslego.com</p>
                 </div>
 
                 <div class="quote-block">
                     <blockquote>“It‘s great to talk about the 82 year old brand that is Lego on the dynamic Lego stage that is The Lego Summit.”</blockquote>
-                    <p><strong>Ole Kirk Christiansen,<br>Creator at Lego</strong></p>
+                    <p><strong>Ole Kirk Christiansen</strong>,<br>Creator at Lego</p>
                 </div>
                 
             </div>
@@ -117,27 +116,27 @@
             <div class="container text-center">
                 <h2>Who will you meet at the LEGO Summit?</h2>
                 <div class="portrait">
-                    <img src="images/portrait-ian.png" alt="Ian Murphy"><p>Ian Murphy<br>CEO<br>Acme Corporation</p>
+                    <img src="images/portrait-ian.png" alt="Ian Murphy"><p><strong>Ian Murphy</strong><br>CEO<br>Acme Corporation</p>
                 </div>
                 <div class="portrait">
                     <img src="images/portrait-sammy.png" alt="Sammy Smith">
-                    <p>Sammy Smith<br>CEO<br>Globex Corporation</p>
+                    <p><strong>Sammy Smith</strong><br>CEO<br>Globex Corporation</p>
                 </div>
                 <div class="portrait">
                     <img src="images/portrait-gail.png" alt="Gail Burton">
-                    <p>Gail Burton<br>CEO<br>Soylent Corp</p>
+                    <p><strong>Gail Burton</strong><br>CEO<br>Soylent Corp</p>
                 </div>
                 <div class="portrait">
                     <img src="images/portrait-steve.png" alt="Steve Nelson">
-                    <p>Steve Nelson<br>CEO<br>Initech</p>
+                    <p><strong>Steve Nelson</strong><br>CEO<br>Initech</p>
                 </div>
                 <div class="portrait">
                     <img src="images/portrait-sabrina.png" alt="Sabrina Lo Duca">
-                    <p>Sabrina Lo Duca<br>CEO<br>Umbrella Corporation</p>
+                    <p><strong>Sabrina Lo Duca</strong><br>CEO<br>Umbrella Corporation</p>
                 </div>
                 <div class="portrait">
                     <img src="images/portrait-adriano.png" alt="Adriano Ballesteros">
-                    <p>Adriano Ballesteros<br>CEO<br>Hooli</p>
+                    <p><strong>Adriano Ballesteros</strong><br>CEO<br>Hooli</p>
                 </div>
             </div>
         </section>
@@ -169,17 +168,25 @@
                 <p>Get the latest Summit news, announcements and exclusive content and offers delivered directly to your inbox.</p>
                 <form action="#">
                     <input type="text" placeholder="Enter your email address">
-                    <input type="submit" class="button">
+                    <input type="submit" class="button" value="Submit">
                 </form>
                 <p class="terms">By clicking on "Submit", you indicate that you agree to our <a href="#">terms and conditions</a>.</p>
             </div>
         </section>
+
+        <a href="#top" class="scroll-top-wrapper page-scroll">
+            <span class="scroll-top-inner">
+                <!-- <i class="fa fa-2x fa-arrow-circle-up"></i> -->
+                Top
+            </span>
+        </a>
 
         <footer>
             <div class="container text-center">
                 <p>Copyright © 2015 - Web Summit</p>
             </div>
         </footer>
+
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
 		<script src="js/main.js"></script>
