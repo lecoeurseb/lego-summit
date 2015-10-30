@@ -427,6 +427,16 @@ min-width: 1024px
   }
 }
 /***********************
+SECTIONS
+min-width: 1200px
+***********************/
+@media only screen and (min-width: 1200px) {
+  /* line 288, ../sass/_sections.scss */
+  #video-container video {
+    width: 100%;
+  }
+}
+/***********************
 HELPERS
 ***********************/
 /* line 6, ../sass/_helpers.scss */
